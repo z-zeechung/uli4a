@@ -1,0 +1,5 @@
+/*
+
+	implemented by compiler
+
+*/
