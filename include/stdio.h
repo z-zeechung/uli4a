@@ -10,12 +10,11 @@
 	# include <uli4a/file.h>
 	# include <uli4a/types.h>
 	
-	# define ULI4A_STDIN_STREAM 0
-	# define ULI4A_STDOUT_STREAM 1
-	# define ULI4A_STDERR_STREAM 2
-	# define ULI4A_FILE_STREAM 3
-	# define ULI4A_PIPE_STREAM 4
-	# define FILE ULI4A_FILE
+	# define ULI4A_STDIN 0
+	# define ULI4A_STDOUT 1
+	# define ULI4A_STDERR 2
+	# define ULI4A_FILE 3
+	# define ULI4A_PIPE 4
 	typedef struct {
 		int32_t handle;
 		char (*read)(char* buf, off_t length, int32_t handle);
@@ -26,7 +25,7 @@
 		char mread;
 		char mwrite;
 		char mseek;
-	} ULI4A_FILE;
+	} FILE;
 	
 	typedef off_t fpos_t;
 	

@@ -1,29 +1,29 @@
 # include <stdio.h>
 # include <uli4a/file.h>
 
-FILE uli4a_stdin_FILE = {
+FILE stdin_FILE = {
 	.read = uli4a_stdin_read,
-	.type = ULI4A_STDIN_STREAM,
+	.type = ULI4A_STDIN,
 	.mread = 1,
 	.mwrite = 0,
 	.mseek = 0
 };
-FILE *const uli4a_stdin = &uli4a_stdin_FILE;
+FILE *const stdin = &stdin_FILE;
 
-FILE uli4a_stdout_FILE = {
+FILE stdout_FILE = {
 	.write = uli4a_stdout_write,
-	.type = ULI4A_STDOUT_STREAM,
+	.type = ULI4A_STDOUT,
 	.mread = 0,
 	.mwrite = 1,
 	.mseek = 0
 };
-FILE *const uli4a_stdout = &uli4a_stdout_FILE;
+FILE *const stdout = &stdout_FILE;
 
-FILE uli4a_stderr_FILE = {
+FILE stderr_FILE = {
 	.write = uli4a_stderr_write,
-	.type = ULI4A_STDERR_STREAM,
+	.type = ULI4A_STDERR,
 	.mread = 0,
 	.mwrite = 1,
 	.mseek = 0
 };
-FILE *const uli4a_stderr = &uli4a_stderr_FILE;
+FILE *const stderr = &stderr_FILE;
