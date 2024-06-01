@@ -16,5 +16,11 @@
 	typedef long long int64_t;
 	
 	typedef unsigned long long uint64_t;
+	
+	# define LDBL_MANT_DIG 64
+	
+	# define LDBL_MAX_EXP 16384
+	
+	# define LDBL_EPSILON 1.0842021724855044340e-19L
 
 # endif

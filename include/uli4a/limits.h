@@ -5,4 +5,6 @@
 	
 	#define FOPEN_MAX 1000
 	
+	#define LONG_MAX 0x7fffffffL
+	
 # endif

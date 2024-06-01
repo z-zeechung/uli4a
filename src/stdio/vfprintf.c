@@ -7,6 +7,7 @@
 
 
 //#include "stdio_impl.h"
+#include <stdio.h>
 #include <errno.h>
 #include <ctype.h>
 #include <limits.h>
