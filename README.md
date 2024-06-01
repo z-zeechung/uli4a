@@ -14,7 +14,7 @@
 
 + 📟A shell emulator
 
-+ 📦A wrapper of any C compiler to simulate the behavior of GCC toolchain
++ 📦A wrapper of any C compiler to emulate the behavior of GCC toolchain
 
 📚mlibc: An easy-to-compile C library with minimal system interfaces, providing stability and good compatibility with current Unix software.
 
