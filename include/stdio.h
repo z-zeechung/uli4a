@@ -1,3 +1,5 @@
+// TODO
+
 # ifndef H_ULI4A_STDIO
 # define H_ULI4A_STDIO
 
@@ -6,14 +8,27 @@
 	# include <stdarg.h>
 	# include <uli4a/limits.h>
 	# include <uli4a/file.h>
+	# include <uli4a/types.h>
 	
+	# define ULI4A_STDIN_STREAM 0
+	# define ULI4A_STDOUT_STREAM 1
+	# define ULI4A_STDERR_STREAM 2
+	# define ULI4A_FILE_STREAM 3
+	# define ULI4A_PIPE_STREAM 4
 	# define FILE ULI4A_FILE
 	typedef struct {
-		int foobar;
+		int32_t handle;
+		char (*read)(char* buf, off_t length, int32_t handle);
+		char (*write)(const char* buf, off_t length, int32_t handle);
+		off_t (*getpos)(int32_t handle);
+		char (*setpos)(int32_t handle, off_t pos);
+		char type;
+		char mread;
+		char mwrite;
+		char mseek;
 	} ULI4A_FILE;
 	
-	# define fpos_t uli4a_fpos_t
-	typedef off_t uli4a_fpos_t;
+	# define fpos_t off_t
 	
 	// off_t defined in <sys/types.h>
 	
@@ -61,6 +76,5 @@
 	
 	# define stderr uli4a_stderr
 	extern FILE *const uli4a_stderr;
-
 
 # endif
