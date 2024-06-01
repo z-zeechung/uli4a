@@ -7,11 +7,9 @@
 	
 	# define offsetof(st, m) ((size_t)&(((st *)0)->m))
 	
-	# define ptrdiff_t uli4a_ptrdiff_t
-	typedef ssize_t uli4a_ptrdiff_t;
+	typedef ssize_t ptrdiff_t;
 	
-	# define wchar_t uli4a_wchar_t
-	typedef uint32_t uli4a_wchar_t;
+	typedef uint32_t wchar_t;
 	
 	// size_t defined in <uli4a/types.h>
 

@@ -5,8 +5,7 @@
 
 	# include <uli4a/types.h>
 	
-	# define off_t uli4a_off_t
-	typedef int64_t uli4a_off_t;
+	typedef int64_t off_t;
 	
 	// ssize_t defined in <uli4a/types.h>
 

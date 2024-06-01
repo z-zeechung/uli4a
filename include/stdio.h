@@ -28,7 +28,7 @@
 		char mseek;
 	} ULI4A_FILE;
 	
-	# define fpos_t off_t
+	typedef off_t fpos_t;
 	
 	// off_t defined in <sys/types.h>
 	
@@ -68,13 +68,10 @@
 	
 	// P_tmpdir defined in <uli4a/file.h>
 	
-	# define stdin uli4a_stdin
-	extern FILE *const uli4a_stdin;
+	extern FILE *const stdin;
 	
-	# define stdout uli4a_stdout
-	extern FILE *const uli4a_stdout;
+	extern FILE *const stdout;
 	
-	# define stderr uli4a_stderr
-	extern FILE *const uli4a_stderr;
+	extern FILE *const stderr;
 
 # endif

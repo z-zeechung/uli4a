@@ -1,8 +1,8 @@
 # ifndef H_ULI4A_BITS_FILE
 # define H_ULI4A_BITS_FILE
 
-	# include <uli4a/types.h>
 	# include <sys/types.h>
+	# include <stdint.h>
 
 	# define P_tmpdir "/tmp"
 	
