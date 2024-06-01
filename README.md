@@ -16,7 +16,7 @@
 
 + 📦A wrapper of any C compiler to emulate the behavior of GCC toolchain
 
-📚mlibc: An easy-to-compile C library with minimal system interfaces, providing stability and good compatibility with current Unix software.
+📚mlibc: An easy-to-compile C library with minimal system interfaces, providing stability and good compatibility with current POSIX softwares.
 
 📜Principles:
 
@@ -25,3 +25,5 @@
 + Unless necessary or specified in the C standard, avoid the use of marcos
 
 + Do not use conditional compilation
+
++ Make things simple
