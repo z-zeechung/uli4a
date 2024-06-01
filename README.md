@@ -1,6 +1,6 @@
 **🏗️Development in progress. Commit welcomed.**
 
-### ULI4A /ˈju:lɪfɑ:/ = Unix-like Interface for Any Platform
+### <ruby>ULI4A<rt>/ˈju:lɪfɑ:/</rt></ruby> = Unix-like Interface for Any Platform
 
 ### mlibc = Minimal libc
 
