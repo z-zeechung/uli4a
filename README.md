@@ -26,4 +26,4 @@
 
 + Do not use conditional compilation
 
-+ Make things simple
++ Keep things simple
