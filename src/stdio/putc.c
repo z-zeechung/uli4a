@@ -8,7 +8,7 @@ static char buf[1];
 
 int putc(int c, FILE *stream){
 
-	buf[0] = (char)c;
+	buf[0] = c;
 	stream->write(buf, 1, stream->handle);
 	return 0;
 

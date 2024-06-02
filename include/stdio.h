@@ -9,6 +9,7 @@
 	# include <uli4a/limits.h>
 	# include <uli4a/file.h>
 	# include <uli4a/types.h>
+	# include <stdbool.h>
 	
 	# define ULI4A_STDIN 0
 	# define ULI4A_STDOUT 1
@@ -22,9 +23,9 @@
 		off_t (*getpos)(int32_t handle);
 		char (*setpos)(int32_t handle, off_t pos);
 		char type;
-		char mread;
-		char mwrite;
-		char mseek;
+		bool mread;
+		bool mwrite;
+		bool mseek;
 	} FILE;
 	
 	typedef off_t fpos_t;
@@ -71,24 +72,34 @@
 	
 	// The following functions have not been debugged
 	
+	# define stdin uli4a_stdin
 	extern FILE *const stdin;
 	
+	# define stdout uli4a_stdout
 	extern FILE *const stdout;
 	
+	# define stderr uli4a_stderr
 	extern FILE *const stderr;
 	
+	# define putc uli4a_putc
 	extern int putc(int c, FILE *stream);
 	
+	# define putchar uli4a_putchar
 	extern int putchar(int);
 	
+	# define printf uli4a_printf
 	extern int printf(const char *, ...);
 	
+	# define sprinf uli4a_sprintf
 	extern int sprintf(char *, const char *, ...);
 	
+	# define snprintf uli4a_snprintf
 	extern int snprintf(char *, size_t, const char *, ...);
 	
+	# define vsnprintf uli4a_vsnprintf
 	extern int vsnprintf(char *, size_t, const char *, va_list);
 	
+	# define vprintf uli4a_vprintf
 	extern int vprintf(const char *, va_list);
 
 # endif
