@@ -67,10 +67,28 @@
 	
 	// P_tmpdir defined in <uli4a/file.h>
 	
+	
+	
+	// The following functions have not been debugged
+	
 	extern FILE *const stdin;
 	
 	extern FILE *const stdout;
 	
 	extern FILE *const stderr;
+	
+	extern int putc(int c, FILE *stream);
+	
+	extern int putchar(int);
+	
+	extern int printf(const char *, ...);
+	
+	extern int sprintf(char *, const char *, ...);
+	
+	extern int snprintf(char *, size_t, const char *, ...);
+	
+	extern int vsnprintf(char *, size_t, const char *, va_list);
+	
+	extern int vprintf(const char *, va_list);
 
 # endif

@@ -8,7 +8,5 @@
 	# define UINT_MAX ((unsigned int)-1)
 	
 	# define ULONG_MAX ((unsigned long)-1L)
-	
-	# define NL_ARGMAX 9
 
 # endif

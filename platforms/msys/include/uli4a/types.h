@@ -1,6 +1,8 @@
 # ifndef H_ULI4A_BITS_TYPES
 # define H_ULI4A_BITS_TYPES
 
+	typedef char bool_t;
+
 	typedef long long ssize_t;
 
 	typedef unsigned int size_t;
@@ -17,10 +19,8 @@
 	
 	typedef unsigned long long uint64_t;
 	
-	# define LDBL_MANT_DIG 64
 	
-	# define LDBL_MAX_EXP 16384
-	
-	# define LDBL_EPSILON 1.0842021724855044340e-19L
+	// a temp value. will mend float.h soon
+	# define DBL_MAX (1E+308)
 
 # endif
