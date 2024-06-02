@@ -18,9 +18,5 @@
 	typedef long long int64_t;
 	
 	typedef unsigned long long uint64_t;
-	
-	
-	// a temp value. will mend float.h soon
-	# define DBL_MAX (1E+308)
 
 # endif
