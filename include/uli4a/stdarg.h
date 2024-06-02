@@ -1,7 +1,0 @@
-/*
-
-	implemented by compiler
-	
-	replace with your stdarg.h
-
-*/
