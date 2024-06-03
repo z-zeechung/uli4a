@@ -45,6 +45,12 @@
 	
 	# define strcpy uli4a_strcpy
 	char* strcpy(char *, const char *);
+
+	# define strcspn uli4a_strcspn
+	size_t strcspn(const char *, const char *);
+
+	# define strdup uli4a_strdup
+	char* strdup(const char *);
 	
 	
 	# define strlen uli4a_strlen
