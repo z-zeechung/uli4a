@@ -7,6 +7,10 @@
 
         // malloc defined in <uli4a/mem.h>
 
+        // +--------------+
+        // |\-------------|
+        // |/-------------|
+        // +--------------+
         // free defined in <uli4a/mem.h>
 
 # endif
