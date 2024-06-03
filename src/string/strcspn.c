@@ -1,7 +1,8 @@
 # include <string.h>
 
 size_t strcspn(const char *s1, const char *s2) {
-    unsigned char lookup[1 << CHAR_BIT] = {0}; // Initialize the lookup table
+    // There won't be a platform where char is not 8 bits... should be?
+    unsigned char lookup[1 << 8] = {0}; // Initialize the lookup table
     const char *s2_end = s2 + strlen(s2); // Calculate the end position of s2
     
     // Build the lookup table to quickly check for character existence in s2
