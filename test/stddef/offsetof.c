@@ -26,8 +26,6 @@ typedef union {
 
 int main() {
 
-    printf("TESTING offsetof in stddef.h...\n");
-
     TestUnion tu;
     memset(&tu, 0, sizeof(TestUnion));  // Initialize the union to all zeros
 
@@ -74,8 +72,6 @@ int main() {
     }*/
 
     // Additional tests can be added here for other members
-    
-    printf("PASS\n\n");
 
     return 0;
 }
