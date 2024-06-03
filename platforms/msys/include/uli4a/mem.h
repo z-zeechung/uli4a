@@ -1,6 +1,8 @@
 # ifndef H_ULI4A_BITS_MEM
 # define H_ULI4A_BITS_MEM
 
+	# include <stddef.h>
+
 	# define malloc uli4a_malloc
 	extern void* malloc(size_t);
 	
