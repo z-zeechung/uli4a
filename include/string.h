@@ -51,13 +51,40 @@
 
 	# define strdup uli4a_strdup
 	char* strdup(const char *);
-	
+
+	// TODO: strerror
+
+	// TODO: strerror_l
+
+	// TODO: strerror_r
 	
 	# define strlen uli4a_strlen
 	size_t strlen(const char *);
-	
+
+	# define strncat uli4a_strncat
+	char* strncat(char *, const char *, size_t);
+
+	# define strncmp uli4a_strncmp
+	int strncmp(const char *, const char *, size_t);
+
+	# define strncpy uli4a_strncpy
+	char* strncpy(char *, const char *, size_t);
+
+	# define strndup uli4a_strndup
+	char* strndup(const char *, size_t);
 	
 	# define strnlen uli4a_strnlen
 	size_t strnlen(const char *, size_t);
+
+	# define strpbrk uli4a_strpbrk
+	char* strpbrk(const char *, const char *);
+
+	# define strrchr uli4a_strrchr
+	char* strrchr(const char *, int);
+
+	// TODO: strsignal
+
+	# define strspn uli4a_strspn
+	size_t strspn(const char *, const char *);
 
 # endif
