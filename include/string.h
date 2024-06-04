@@ -86,5 +86,18 @@
 
 	# define strspn uli4a_strspn
 	size_t strspn(const char *, const char *);
+	
+	# define strstr uli4a_strstr
+	char* strstr(const char *, const char *);
+	
+	# define strtok uli4a_strtok
+	char* strtok(char *, const char *);
+	
+	# define strtok_r uli4a_strtok_r
+	char* strtok_r(char *, const char *, char **);
+	
+	// TODO: strxfrm
+	
+	// TODO: strxfrm_l
 
 # endif
